@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Experience Letter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            max-width: 612px;
+        }
+        .container {
+            width: 612px;
+            min-height: 1008px;
+            padding: 30px;
+            background-color: #fff;
+            box-sizing: border-box;
+            position: relative;
+            border: 5px double #c3a35c;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            border: 1.5px solid #b0b0b0;
+            border-radius: 4px;
+            pointer-events: none;
+        }
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #c3a35c;
+            margin-bottom: 10px;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+            margin-right: 5px;
+            border: 2px solid #c3a35c;
+            padding: 3px;
+        }
+        .memo-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .memo-info {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .date-info {
+            text-align: right;
+            font-size: 14px;
+            color: #000;
+            text-decoration: underline;
+        }
+        .subject {
+            font-size: 16px;
+            font-weight: bold;
+            color: #c3a35c;
+            margin: 15px 0;
+            border-bottom: 2px solid #c3a35c;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .content {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 10px;
+            border-top: 3px solid #f1f1f1;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer .signature {
+            font-size: 16px;
+            font-weight: bold;
+            color: #c3a35c;
+            font-style: italic;
+        }
+        .contact-info {
+            text-align: left;
+            font-size: 18px;
+            color: #333;
+        }
+        .contact-info a {
+            display: flex;
+            text-decoration: none;
+            color: #8B4513;
+            margin-bottom: 8px;
+        }
+        .contact-info a:hover {
+            color: #003366;
+            text-decoration: underline;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #c3a35c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #a3894e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="experienceLetter">
+        <div class="header">
+            <div class="logo">
+                <img src="av-photoaidcom-cropped.png"
+                     alt="Logo" crossorigin="anonymous"
+                     onerror="this.onerror=null; this.src='backup-logo.png';">
+                <p>VSPAZE TECHNOLOGIES</p>
+            </div>
+        </div>
+
+        <div class="memo-container">
+            <div class="memo-info">
+                <strong>
+                    <p>
+                        Flat No. 203/2, MLA Colony,<br>
+                        Film Nagar, Jubilee Hills,<br>
+                        Hyderabad – 500034,<br>
+                        Telangana.
+                    </p>
+                    <p>To,<br>Mr. Dasawar Vishal Kumar,<br></p>
+                </strong>
+            </div>
+            <div class="date-info">
+                <p><strong>Date:</strong> 09/10/2025</p>
+            </div>
+        </div>
+
+        <p class="subject">Subject: Experience Letter</p>
+
+        <div class="content">
+            <p>To Whom It May Concern,</p>
+
+            <p>This is to certify that <strong>Mr. Dasawar Vishal Kumar</strong> was employed with
+            <strong>Vspaze Technologies</strong> as a <strong>Flutter Developer (Full Stack Developer)</strong>
+            from <strong>14th September 2024</strong> to <strong>9th October 2025</strong>.</p>
+
+            <p>During his tenure, he successfully designed and developed two key projects —
+            <strong>School See</strong> and <strong>Blink Bowl</strong>. His responsibilities included front-end
+            and back-end development, API integration, UI optimization, and deployment. He consistently
+            demonstrated strong technical proficiency and time management.</p>
+
+            <p>Mr. Vishal Kumar’s dedication, professionalism, and collaborative approach made a significant positive
+            impact on the organization. His contributions were of high quality and met or exceeded expectations.</p>
+
+            <p>We appreciate his efforts and wish him continued success in his future career endeavors.</p>
+
+            <p>Sincerely,</p>
+        </div>
+
+        <div class="footer">
+            <div>
+                <p><strong style="color:black;font-size:18px">Best Regards,</strong><br></p>
+                <p class="signature">Sujay Daniel,<br>HR Manager,<br>Vspaze Technologies</p>
+            </div>
+            <div class="contact-info">
+                <p><strong>Contact Us</strong></p>
+                <a href="mailto:support@vspaze.com" target="_blank"><i class="fas fa-envelope"></i>&nbsp;support@vspaze.com</a>
+                <a href="http://www.vspazetechnologies.in" target="_blank"><i class="fas fa-globe"></i>&nbsp;www.vspazetechnologies.in</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button onclick="downloadPDF()">Download Experience Letter</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById('experienceLetter');
+            html2canvas(element, { scale: 3, backgroundColor: '#fff', useCORS: true }).then(canvas => {
+                const pdf = new jsPDF('p', 'mm', 'legal');
+                const imgWidth = pdf.internal.pageSize.getWidth();
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+                pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, imgWidth, imgHeight);
+                pdf.save('Vspaze_Experience_Letter.pdf');
+            });
+        }
+    </script>
+</body>
+</html>

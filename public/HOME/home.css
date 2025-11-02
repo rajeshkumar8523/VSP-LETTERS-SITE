@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #007991, #78ffd6);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInBody 1s ease-in-out;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 15px 40px;
+  backdrop-filter: blur(6px);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: slideDown 0.8s ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+
+.vspaze-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  text-align: left;
+  font-weight: 800;
+  
+  margin: 18px 0;
+}
+
+.vspaze {
+  color: #ffffff; /* teal or any color you like */
+}
+
+.tech {
+  color: #00bfa6; /* black or dark gray */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .vspaze-heading {
+    font-size: 15px;
+  }
+}
+
+/* NAV MENU */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #00bfa6;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 191, 166, 0.5);
+}
+
+/* === HAMBURGER MENU === */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 3px;
+  margin-right: 0;
+  margin-left: 100px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* ================= INTRO SECTION ================= */
+.intro {
+  text-align: center;
+  color: #fff;
+  margin: 60px auto 30px;
+  max-width: 700px;
+  animation: fadeInUp 1.5s ease;
+}
+
+.intro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ================= CARDS ================= */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  width: 330px;
+  text-align: center;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s forwards;
+}
+
+.card.delay {
+  animation-delay: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+  font-size: 2.8rem;
+  color: #00bfa6;
+  margin-bottom: 15px;
+  animation: pulse 2s infinite;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Buttons */
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* ✅ Centers icon + text inside the button */
+  gap: 8px;
+  background: #00bfa6;
+  color: white;
+  padding: 12px;
+ 
+  border-radius: 6px;
+  text-decoration: none;
+  width: 100%;              /* ✅ Button width stays same */
+  font-size: 0.8rem;
+  transition: background 0.3s ease;
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #007991, #00bfa6);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: auto;
+  padding: 25px 0;
+  opacity: 0.9;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInBody {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* 900px ↓ */
+@media (max-width: 900px) {
+  .navbar { padding: 12px 25px; }
+  .intro h2 { font-size: 1.6rem; }
+  .intro p { font-size: 0.95rem; }
+  .card { width: 300px; padding: 20px; width: 100%;}
+}
+
+/* 768px ↓ (Tablet & Mobile) */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    margin-left: 40%;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 50%;
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 86.1px;
+    left: 0;
+    
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  nav ul.active {
+    display: flex;
+    animation: fadeInMenu 0.5s ease;
+  }
+
+  @keyframes fadeInMenu {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .navbar {
+    flex-direction: row;
+  }
+
+  .intro h2 { font-size: 1.5rem; }
+  .intro p { font-size: 0.9rem; }
+  .cards { flex-direction: column; align-items: center; }
+  .card { width: 90%; padding: 20px; }
+  .btn { font-size: 0.9rem; padding: 12px; width: 100%;}
+}
+
+/* 600px ↓ */
+@media (max-width: 600px) {
+  .vspaze-heading  { font-size: 1.1rem; }
+  .intro h2 { font-size: 1.3rem; }
+  .intro p { font-size: 0.85rem; }
+  .btn { font-size: 0.8rem; padding: 10px; }
+  .card { width: 85%; }
+}
+
+/* 500px ↓ */
+@media (max-width: 500px) {
+  .logo img { height: 35px; width: 35px; }
+  .intro h2 { font-size: 1.1rem; }
+  .intro p { font-size: 0.8rem; }
+  .card h3 { font-size: 1.1rem; }
+  .card p { font-size: 0.8rem; }
+  .btn { font-size: 0.75rem; padding: 9px; }
+}
+
+/* 400px ↓ */
+@media (max-width: 400px) {
+  .navbar { padding: 10px 15px; }
+  .vspaze-heading  { font-size: 1rem; }
+  .intro h2 { font-size: 1rem; }
+  .intro p { font-size: 0.75rem; }
+  .card { width: 90%; padding: 15px; }
+  .btn { font-size: 0.7rem; }
+}

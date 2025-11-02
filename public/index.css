@@ -378,20 +378,306 @@ button.ghost {
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* === RESPONSIVE === */
+
+/* === FONT RESPONSIVENESS ONLY === */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p,
+  span,
+  label,
+  input,
+  button {
+    font-size: 14px;
+  }
+
+  .social-container a i {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 768px) {
-  .container {
-    width: 95%;
-    min-height: 600px;
+  h1 {
+    font-size: 22px;
   }
-  .overlay {
-    display: none;
+
+  p,
+  span,
+  label,
+  input,
+  button {
+    font-size: 13px;
   }
-  .sign-in-container,
-  .sign-up-container {
-    width: 100%;
-    position: relative;
-    opacity: 1;
-    transform: none;
+
+  .social-container a i {
+    font-size: 14px;
+  }
+  .social{
+      height: 25px;
+  width: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  p,
+  span,
+  label,
+  input,
+  button {
+    font-size: 12px;
+  }
+
+ .social-container a i {
+    font-size: 12px;
+  }
+  .social{
+      height: 22px;
+  width: 22px;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  p,
+  span,
+  label,
+  input,
+  button {
+    font-size: 11px;
+  }
+
+  .social-container a i {
+    font-size: 12px;
+  }
+  .social{
+      height: 23px;
+  width: 23px;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  p,
+  span,
+  label,
+  input,
+  button {
+    font-size: 10px;
+  }
+
+  .social-container a i {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 14px;
+  }
+
+  p,
+  span,
+  label,
+  input,
+  button {
+    font-size: 9px;
+  }
+
+  .social-container a i {
+    font-size: 8px;
+  }
+  .social{
+      height: 18px;
+  width: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .popup {
+    width: 360px;
+    padding: 25px 20px;
+  }
+
+  .popup h2 {
+    font-size: 20px;
+  }
+
+  .popup p {
+    font-size: 13px;
+  }
+
+  .popup input {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+
+  .popup button {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+/* For 768px and below (medium mobiles) */
+@media (max-width: 768px) {
+  .popup {
+    width: 320px;
+    padding: 22px 18px;
+    border-radius: 12px;
+  }
+
+  .popup h2 {
+    font-size: 18px;
+  }
+
+  .popup p {
+    font-size: 12px;
+  }
+
+  .popup input {
+    font-size: 12px;
+    padding: 9px 12px;
+  }
+
+  .popup button {
+    font-size: 12px;
+    padding: 9px;
+  }
+
+  .close {
+    font-size: 18px;
+  }
+}
+
+/* For small phones (650px - 550px) */
+@media (max-width: 650px) {
+  .popup {
+    width: 280px;
+    padding: 20px 15px;
+    border-radius: 10px;
+  }
+
+  .popup h2 {
+    font-size: 17px;
+  }
+
+  .popup p {
+    font-size: 11px;
+  }
+
+  .popup input {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+
+  .popup button {
+    font-size: 11px;
+    padding: 8px;
+  }
+
+  .close {
+    font-size: 17px;
+  }
+}
+
+/* For smaller phones (550px - 450px) */
+@media (max-width: 550px) {
+  .popup {
+    width: 250px;
+    padding: 18px 12px;
+  }
+
+  .popup h2 {
+    font-size: 16px;
+  }
+
+  .popup p {
+    font-size: 10px;
+  }
+
+  .popup input {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  .popup button {
+    font-size: 10px;
+    padding: 7px;
+  }
+
+  .close {
+    font-size: 16px;
+  }
+}
+
+/* For extra small phones (450px and below) */
+@media (max-width: 450px) {
+  .popup {
+    width: 230px;
+    padding: 16px 10px;
+    border-radius: 8px;
+  }
+
+  .popup h2 {
+    font-size: 15px;
+  }
+
+  .popup p {
+    font-size: 9px;
+  }
+
+  .popup input {
+    font-size: 9px;
+    padding: 7px;
+  }
+
+  .popup button {
+    font-size: 9px;
+    padding: 6px;
+  }
+
+  .close {
+    font-size: 15px;
+  }
+}
+
+/* For very small devices (400px and below) */
+@media (max-width: 400px) {
+  .popup {
+    width: 200px;
+    padding: 14px 8px;
+  }
+
+  .popup h2 {
+    font-size: 14px;
+  }
+
+  .popup p {
+    font-size: 8px;
+  }
+
+  .popup input {
+    font-size: 8px;
+    padding: 6px;
+  }
+
+  .popup button {
+    font-size: 8px;
+    padding: 6px;
+  }
+
+  .close {
+    font-size: 14px;
   }
 }
